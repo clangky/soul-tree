@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#03040a" />
+    <meta name="description" content="A creative simulation of souls moving through lives, awakening to the whole." />
+    <title>Soul Tree — A Cosmological Imagination</title>
+  </head>
+  <body>
+    <main id="app">
+      <section class="threshold" id="threshold">
+        <div class="threshold__sigil" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <p class="kicker">A cosmological imagination</p>
+        <h1>Every light<br />is living a life.</h1>
+        <p class="threshold__copy">Watch a multitude divide, converge, forget, return, and slowly awaken to the body they have always formed together.</p>
+        <button class="enter-button" id="enter-button"><span>Enter the living tree</span><b>→</b></button>
+        <p class="disclaimer">A work of imagination—not a claim about what souls or the universe truly are.</p>
+      </section>
+
+      <section class="cosmos is-hidden" id="cosmos">
+        <div id="scene" aria-label="Interactive simulation of a cosmic tree formed by individual souls"></div>
+        <header class="topbar">
+          <div class="identity">
+            <span class="identity__mark">◉</span>
+            <div><b>SOUL TREE</b><small>A LIVING HYPOTHESIS</small></div>
+          </div>
+          <div class="era"><span id="era-name">The Age of Sleep</span><i></i></div>
+          <button class="round-button" id="pause-button" aria-label="Pause simulation">Ⅱ</button>
+        </header>
+
+        <aside class="witness-panel glass-panel">
+          <p class="kicker">The witness</p>
+          <h2 id="witness-title">A million separate journeys.</h2>
+          <p id="witness-copy">Each light believes it travels alone. Beneath that appearance, every path shares a hidden root.</p>
+          <div class="stats">
+            <div><strong id="population-stat">250,000</strong><span>souls represented</span></div>
+            <div><strong id="awake-stat">3.2%</strong><span>awake to the whole</span></div>
+            <div><strong id="lives-stat">0</strong><span>lives traversed</span></div>
+            <div><strong id="coherence-stat">0.08</strong><span>collective coherence</span></div>
+          </div>
+        </aside>
+
+        <aside class="controls-panel glass-panel" id="controls-panel">
+          <div class="controls-heading">
+            <div><p class="kicker">Forces</p><h3>Shape the becoming</h3></div>
+            <button id="controls-toggle" aria-label="Collapse controls">−</button>
+          </div>
+          <div class="controls-body">
+            <label class="control">
+              <span><b>Population</b><output id="population-output">250K</output></span>
+              <input id="population" type="range" min="10000" max="1000000" step="10000" value="250000" />
+              <small>Rendered as a luminous aggregate above 180K.</small>
+            </label>
+            <label class="control">
+              <span><b>Awakening</b><output id="awakening-output">18%</output></span>
+              <input id="awakening" type="range" min="0" max="1" step="0.01" value="0.18" />
+              <small>The chance that recognition spreads between lives.</small>
+            </label>
+            <label class="control">
+              <span><b>Resistance</b><output id="resistance-output">72%</output></span>
+              <input id="resistance" type="range" min="0" max="1" step="0.01" value="0.72" />
+              <small>The force that preserves separation at the threshold.</small>
+            </label>
+            <label class="control">
+              <span><b>Choice</b><output id="choice-output">64%</output></span>
+              <input id="choice" type="range" min="0" max="1" step="0.01" value="0.64" />
+              <small>How strongly souls depart from inherited paths.</small>
+            </label>
+            <label class="control">
+              <span><b>Time</b><output id="speed-output">1×</output></span>
+              <input id="speed" type="range" min="0" max="3" step="0.05" value="1" />
+            </label>
+            <div class="control-actions">
+              <button id="pulse-button">Send a pulse</button>
+              <button id="reset-button">Begin again</button>
+            </div>
+          </div>
+        </aside>
+
+        <div class="threshold-meter">
+          <span>SEPARATION</span>
+          <div><i id="threshold-progress"></i><b id="breach-marker"></b></div>
+          <span>REMEMBRANCE</span>
+        </div>
+
+        <nav class="aspects" aria-label="Ways of seeing the simulation">
+          <p>CHANGE ASPECT</p>
+          <div>
+            <button class="aspect is-active" data-view="tree"><i>♆</i><span>Tree</span></button>
+            <button class="aspect" data-view="serpent"><i>∞</i><span>Ouroboros</span></button>
+            <button class="aspect" data-view="mandala"><i>✺</i><span>Mandala</span></button>
+            <button class="aspect" data-view="within"><i>·</i><span>Within</span></button>
+          </div>
+        </nav>
+
+        <div class="moment" id="moment"><span></span><p id="moment-text">The first soul remembers another.</p></div>
+        <p class="gesture">drag to turn · scroll to approach · change aspect to reveal another truth</p>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
