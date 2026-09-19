@@ -1,14 +1,15 @@
 # Soul Tree — Status
 
-*Updated: 2026-09-16*
+*Updated: 2026-09-18*
 
 ## Current state
 
-Soul Tree is a complete first experiential prototype and is publicly available
-at <https://github.com/clangky/soul-tree>. It simulates a large population of
-souls moving through lives, inherited trajectories, choice, awakening,
-collective coherence, and resistance. Four camera aspects reveal the same
-system as Tree, Ouroboros, Mandala, or an interior view.
+Soul Tree is a complete first experiential prototype and is publicly playable
+at <https://clangky.github.io/soul-tree/>. Its source is publicly available at
+<https://github.com/clangky/soul-tree>. It simulates a large population of souls
+moving through lives, inherited trajectories, choice, awakening, collective
+coherence, and resistance. Four camera aspects reveal the same system as Tree,
+Ouroboros, Mandala, or an interior view.
 
 The simulation supports a logical population up to one million souls while
 rendering a bounded GPU particle population (180,000 on desktop and 90,000 on
@@ -22,9 +23,13 @@ speed, camera aspect, pause, pulse, force application, and reset.
 - A repository secret scan found no credentials or private material.
 - Public GitHub visibility, default branch `main`, and HTTP access were
   verified. The initial public release was commit `06d8966`.
-- Automated live-browser inspection could not be completed because the host's
-  managed/local Chrome repeatedly failed during startup. This is an environment
-  limitation, not a confirmed application failure.
+- GitHub Pages deploys automatically from `main` through
+  `.github/workflows/deploy-pages.yml`. The first Actions build and deployment
+  passed, and the live HTML, JavaScript, and CSS endpoints returned HTTP 200.
+- Automated visual browser inspection could not be completed because the host's
+  managed browser timed out and direct headless Chrome did not produce a
+  screenshot. This is an environment limitation, not a confirmed application
+  failure.
 
 ## Unresolved
 
@@ -35,12 +40,10 @@ speed, camera aspect, pause, pulse, force application, and reset.
 - The repository has no license. Public visibility does not grant a reuse
   license; Merl should choose one explicitly before inviting contributions or
   reuse.
-- Deployment beyond the public source repository (for example GitHub Pages)
-  was not requested and has not been configured.
 
 ## Next step
 
-Follow `NEXT-SESSION.md`: run the experience, validate interaction and frame
-rate, capture the first representative visuals, and then decide whether the
-next iteration should emphasize local-neighbor awakening, richer resistance,
-or presentation/deployment.
+Follow `NEXT-SESSION.md`: open the live experience, validate interaction and
+frame rate, capture the first representative visuals, and then decide whether
+the next iteration should emphasize local-neighbor awakening, richer
+resistance, or presentation polish.

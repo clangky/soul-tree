@@ -4,6 +4,8 @@ A real-time creative simulation of individual souls moving through lives,
 reincarnating through a shared root, making choices, and gradually recognizing
 the unified body formed by their journeys.
 
+**Live experience:** <https://clangky.github.io/soul-tree/>
+
 This is speculative art, not a religious, scientific, or metaphysical claim.
 
 ## Run

@@ -1,6 +1,6 @@
 # Soul Tree — Next Session
 
-*Prepared: 2026-09-16*
+*Prepared: 2026-09-18*
 
 ## Start here
 
@@ -31,11 +31,12 @@ changing the model.
   local-neighbor awakening is the strongest candidate because it would let
   coherence propagate visibly rather than only emerge globally.
 - Decide explicitly whether the project should receive an open-source license.
-- Configure GitHub Pages or another public deployment only if Merl wants a
-  playable public URL; the current public artifact is the source repository.
+- Use the live GitHub Pages deployment at <https://clangky.github.io/soul-tree/>
+  for sharing and cross-device review. Pushes to `main` redeploy it automatically.
 
 ## Known constraint
 
-The previous automated runtime check was blocked by a host-level Chrome startup
-failure. Do not treat that as application validation. The production build and
-dependency audit passed, but a human browser pass remains required.
+Automated visual browser checks remain blocked by host-level browser startup
+failures. Do not treat successful HTTP and asset checks as experiential
+validation. The production build, dependency audit, GitHub Actions deployment,
+and live endpoint checks passed, but a human browser pass remains required.
